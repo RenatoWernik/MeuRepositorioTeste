@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoTravel - Budget Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="BGC.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="BGC.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+</head>
+<body> 
+  <header>
+      <nav id='menu'>
+        <h2 class="logo"><span>Go</span>Travel</h2>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul>
+          <li><a href='landinghtml.html'>Home</a></li>
+          <li><a href='index.html'>Destinations</a></li>
+          <li><a href='foods.html'>Foods</a></li>
+          <li><a href='indexBGC.html'>Budget Calculator</a></li>
+          <li><a href='aboutus.html'>About Us</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <div class="main">
+    <div class="text">
+      <h1><span>Your Travel Budget</span> Calculator</h1>
+      <p id="p1">Plan your expenses for the perfect trip!</p>
+      <form id="budgetForm">
+        <label for="country">Country:</label>
+        <select id="country" required>
+          <option value="" disabled selected>Select a country</option>
+          
+          <!-- Adicione opções para os outros países -->
+        </select>
+      
+        <label for="city">City:</label>
+        <select id="city" required>
+          <option value="" disabled selected>Select a city</option>
+          <!-- As opções da cidade serão preenchidas dinamicamente com JavaScript -->
+        </select>
+      
+        <label for="nights">Number of Nights:</label>
+        <input type="number" id="nights" required>
+      
+        <label for="mealsPerDay">Meals per Day:</label>
+        <input type="number" id="mealsPerDay" required>
+      
+        <button class="buttons" type="button" onclick="calculateBudget()">Calculate</button>
+        <button class="buttons" id="clearBtn" onclick="clearBudgetResult()">Clear</button>
+      </form>
+      
+      <div id="budgetResult" style="display: none;"></div>
+      <p id="budgetMessage" style="display: none;"></p>
+    </div>
+  </div>
+  <footer>
+    <div class="footer">
+    <p id="pfooter">&copy;2023 GoTravel | All Rights Reserved | Renato Wernik | Ruben Galvão | Filipa Neves | IPLUSO</p>
+    </div>
+  </footer>
+</body>
+</html>

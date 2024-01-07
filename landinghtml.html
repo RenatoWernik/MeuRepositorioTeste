@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoTravel - Explore the World</title>
+  <link rel="stylesheet" type="text/css" href="landingCSS.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+  <script src="landingJS.js" defer></script>
+</head>
+<body>
+
+  <!-- Layout -->
+  <section class="layout">
+    
+    <!-- Header -->
+    <div class="header">
+      <nav id='menu'>
+        <h2 class="logo"><span>Go</span>Travel</h2>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul>
+          <li><a href='landinghtml.html'>Home</a></li>
+          <li><a href='index.html'>Destinations</a></li>
+          <li><a href='foods.html'>Foods</a></li>
+          <li><a href='indexBGC.html'>Budget Calculator</a></li>
+          <li><a href='aboutus.html'>About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+
+     
+<!-- No início do corpo da sua página HTML -->
+<div class="welcome-message">
+  <h1>Welcome to Go<span id="spanwelcome">Travel</span>!</h1>
+  <p>Go<span class="brand-name">Travel</span>,is your ultimate destination for unforgettable journeys and seamless travel planning. Explore the world's most iconic destinations, use our budget calculator for stress-free planning, and embark on adventures that will create lasting memories. Your exciting journey begins right here!
+</div>
+
+
+<div class="features-section">
+  <h1 id="h1features">HERE ARE SOME OF OUR FEATURES:</h1>
+  <div class="feature">
+    <a href="index.html">
+      <img src="imagens/airplane.png" alt="Feature 1">
+      <h3>Explore Destinations</h3>
+      <p>Discover a variety of iconic destinations around the world.</p>
+    </a>
+  </div>
+  <div class="feature">
+    <a href="indexBGC.html">
+      <img src="imagens/calculator.png" alt="Feature 2">
+      <h3>Budget Calculator</h3>
+      <p>Simplify your travel planning with our budget calculator.</p>
+    </a>
+  </div>
+</div>
+
+
+      <!-- Landing Text and Image Slider -->
+      <div class="landing-text">
+        <h1 class="landing-title">
+          <span class="landing-e">E</span>xplore, 
+          <span class="landing-e">E</span>xperience, 
+          <span class="landing-e">E</span>njoy!
+        </h1>
+        <p id="pdescr">Unleash your wanderlust with GoTravel. Discover iconic destinations, simplify your budget with our calculator, and turn your travel dreams into reality. Your journey starts here. GoTravel - Where Your Adventure Begins!</p>
+      </div>
+      <div class="image-container">
+        <div class="image-slider">
+          <div class="image-card">
+            <img src="imagens/familia1.jpeg" alt="Tourist Attraction 1">
+            <div class="image-description">Canada, Vulcan</div>
+          </div>
+          <div class="image-card">
+            <img src="imagens/familia2.jpeg" alt="Tourist Attraction 2">
+            <div class="image-description">Rio de Janeiro, Brazil</div>
+          </div>
+          <div class="image-card">
+            <img src="imagens/balao4k.jpg" alt="Tourist Attraction 3">
+            <div class="image-description">Istanbul, Turquia</div>
+          </div>
+          <div class="image-card">
+            <img src="imagens/familia4.jpeg" alt="Tourist Attraction 4">
+            <div class="image-description">Pulau Jawa, Indonesia</div>
+          </div>
+        </div>
+        <div class="button-container">
+          <button class="prev-button" onclick="prevImage()">Previous Image</button>
+          <button class="next-button" onclick="nextImage()">Next Image</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="testimonials-section">
+      <h2 id="h2testimonials">What Our Travelers Say :</h2>
+      <div class="testimonial">
+        <img src="imagens/dep1.jpeg" alt="User 1">
+        <p>"GoTravel made my dream vacation a reality. The destinations were amazing, and the planning was a breeze."</p>
+        <cite>- Jeff.S</cite>
+      </div>
+      <div class="testimonial">
+        <img src="imagens/dep2.jpeg" alt="User 2">
+        <p>"I used GoTravel's budget calculator, and it saved me both time and money. Highly recommended!"</p>
+        <cite>- John D.</cite>
+      </div>
+      <div class="testimonial">
+        <img src="imagens/dep3.jpeg" alt="User 3">
+        <p>"Thanks to GoTravel, I had the best travel experience of my life. Can't wait for my next adventure!"</p>
+        <cite>- Sarah K.</cite>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p id="pfooter">&copy;2023 GoTravel | All Rights Reserved | Renato Wernik | Ruben Galvão | Filipa Neves | IPLUSO</p>
+    </div>
+
+  </section>
+
+</body>
+</html>

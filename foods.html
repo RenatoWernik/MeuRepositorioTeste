@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoTravel - Explore Foods</title>
+  <link rel="stylesheet" type="text/css" href="foods.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+  <script src="food.js" defer></script>
+</head>
+<body>
+
+  
+  <section class="layout">
+    
+    
+    <div class="food-header">
+      <nav id='menu'>
+        <h2 class="logo"><span>Go</span>Travel</h2>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul>
+          <li><a href='landinghtml.html'>Home</a></li>
+          <li><a href='index.html'>Destinations</a></li>
+          <li><a href='foods.html'>Foods</a></li>
+          <li><a href='indexBGC.html'>Budget Calculator</a></li>
+          <li><a href='aboutus.html'>About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+      <h1 class="h1foods">Some typical dishes from each country:</h1>
+      <div class="image-container">
+        <div class="image-slider">
+          <div class="image-card">
+            <img src="imagens/cozidoportuguesa.jpg" alt="prato 1">
+            <div class="image-description">Cozido à Portuguesa, Portugal</div>
+          </div>
+          <div class="image-card">
+            <img src="imagens/ravioli.jpg" alt="prato 2">
+            <div class="image-description">Ravioli, Italy</div>
+          </div>
+          <div class="image-card">
+            <img src="imagens/ramen.jpg" alt="prato 3">
+            <div class="image-description">Rámen, Japan</div>
+          </div>
+          <div class="image-card">
+            <img src="imagens/ratatouille.jpg" alt="prato 4">
+            <div class="image-description">Ratatouille, France</div>
+          </div>
+          <div class="image-card">
+            <img src="imagens/paella.jpg" alt="prato 5">
+            <div class="image-description">Paella Valenciana, Spain</div>
+          </div>
+          <div class="image-card">
+            <img src="imagens/feijoada.jpg" alt="prato 6">
+            <div class="image-description">Feijoada, Brasil</div>
+          </div>
+          <div class="image-card">
+            <img src="imagens/koshary.jpg" alt="prato 7">
+            <div class="image-description">Koshary, Egypt</div>
+          </div>
+          <div class="image-card">
+            <img src="imagens/gyros.jpg" alt="prato 8">
+            <div class="image-description">Gyros, Greece</div>
+          </div>
+        </div>
+        <div class="button-container">
+          <button class="prev-button" onclick="prevImage()">Previous Image</button>
+          <button class="next-button" onclick="nextImage()">Next Image</button>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+   
+    <div class="footer">
+      <p id="pfooter">&copy;2023 GoTravel | All Rights Reserved | Renato Wernik | Ruben Galvão | Filipa Neves | IPLUSO</p>
+    </div>
+  </section>
+</body>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoTravel</title>
+    <link rel="stylesheet" type="text/css" href="aboutuscss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="green-header">
+        <nav id='menu'>
+            <h2 class="logo"><span>Go</span>Travel</h2>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+                <li><a href='landinghtml.html'>Home</a></li>
+                <li><a href='index.html'>Destinations</a></li>
+                <li><a href='foods.html'>Foods</a></li>
+                <li><a href='indexBGC.html'>Budget Calculator</a></li>
+                <li><a href='aboutus.html'>About Us</a></li>
+            </ul>
+          </nav>
+    </header>
+    
+    
+    <div class="center-content">
+        <h1 class="h1"><span class="about">About</span> us</h1>
+        
+        <div id="aboutText" class="description hidden">
+            <p>Welcome to GoTravel, your go-to platform for discovering the world's most amazing destinations and planning your dream vacations.<br> Established in 2023, GoTravel is dedicated to providing you with the tools and information you need to make your travel experience unforgettable.</p>
+        </div>
+        
+        <div id="moreText" class="description hidden">
+            <p>Our mission is to help you find the best destinations that cater to your interests and preferences.<br> Whether you're seeking adventure, relaxation, or cultural exploration, GoTravel has you covered.</p>
+        </div>
+
+        <div id="lastText" class="description hidden">
+            <p>Planning your budget is a crucial aspect of any trip, and that's why we offer a user-friendly Budget Calculator.<br> Our calculator makes it easy for you to estimate your expenses and ensures a stress-free travel planning process.</p>
+        </div>
+
+        <!-- Botão "Ler Mais" -->
+        <button class="buttons"id="readMoreBtn" onclick="toggleText()">Read More</button>
+        
+        <!-- Adicionando botões -->
+        <div class="buttons">
+            <a href="index.html" class="button">Explore Destinations</a>
+            
+        </div>
+    </div>
+    <div class="contact-info">
+        <p id="contactp">Contact us:</p>
+        <ul>
+            <li class="licontact"><img src="imagens/instagram.png" alt="Instagram Icon"> <a href="https://www.instagram.com/seu_usuario" target="_blank">@GoTravel</a></li>
+            <li class="licontact"><img src="imagens/phone-call (1).png" alt="Phone Icon"> 924 241 420</li>
+            <li class="licontact"><img src="imagens/email.png" alt="Email Icon"> <a href="mailto:seu@email.com">GoTravel2023@gmail.com</a></li>
+        </ul>
+    </div>
+
+    <!-- Botão "Ler Mais" -->
+    
+    
+    <!-- Adicionando botões -->
+   
+    <footer>
+        <div class="footer">
+        <p id="pfooter">&copy;2023 GoTravel | All Rights Reserved | Renato Wernik | Ruben Galvão | Filipa Neves | IPLUSO</p>
+        </div>
+      </footer>
+
+    <!-- Adicione o resto do conteúdo da sua página aqui -->
+    <script src="aboutus.js"></script>
+    
+</body>
+
+</html>

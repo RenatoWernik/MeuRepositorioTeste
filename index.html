@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoTravel</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+    <nav id='menu'>
+      <h2 class="logo"><span>Go</span>Travel</h2>
+      <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+      <ul>
+        <li><a href='landinghtml.html'>Home</a></li>
+          <li><a href='index.html'>Destinations</a></li>
+          <li><a href='foods.html'>Foods</a></li>
+          <li><a href='indexBGC.html'>Budget Calculator</a></li>
+          <li><a href='aboutus.html'>About Us</a></li>
+      </ul>
+    </nav>
+    
+    <div class="main">
+      <div class="text">
+        <div id="locationSummaryContainer"></div>
+        <h1 id="h1summary"><span>Your best </span>Traveling website</h1>
+        <p id="p1">Explore the world</p>
+        <div class="search-container">
+          <input type="text" class="searchInput" id="searchInput" placeholder="Enter your search...">
+          <div class="searchIcon" id="searchIcon">&#8594;</div>
+        </div>
+        <ul id="touristSpotsList"></ul>
+        <div id="locationSummary"></div>
+      </div>
+    </div>
+  </header>
+  <footer>
+    <div class="footer">
+    <p id="pfooter">&copy;2023 GoTravel | All Rights Reserved | Renato Wernik | Ruben Galvão | Filipa Neves | IPLUSO</p>
+    </div>
+  </footer>
+</body>
+</html>
